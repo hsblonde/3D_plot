@@ -21,7 +21,7 @@ View(species_codes) #view the species codenames
 
 
 p<-plot_ly(data = compositions_scores, x = ~Adaptation, y = ~Mitigation, z = ~Biodiversity, text = ~SpComp, 
-           type = 'scatter3d',color= ~as.factor(Species_richness), colors = "Set1")
+           type = 'scatter3d',color= ~as.factor(Species_richness), colors = c("#FDE725FF","#3CBB75FF","#2D708EFF","#440154FF")) #color palette viridis, but selected colors myself
 
 p #show interactive plot, species compositions are highlighted on label
   #plot saved via "export' on width = 700 and height = 686
